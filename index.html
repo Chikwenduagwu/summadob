@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokenomics Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  
+  <div class="container">
+    <h1>Tokenomics Simulator</h1>
+    <form id="simulatorForm">
+      <label>Total Supply:</label>
+      <input type="number" id="supply" required />
+
+      <label>Fully Diluted Valuation (FDV $):</label>
+      <input type="number" id="fdv" required />
+
+      <label>Circulating % at TGE:</label>
+      <input type="number" id="circulating" required />
+
+      <label>Vesting (months):</label>
+      <input type="number" id="vesting" placeholder="Optional"/>
+
+      <button type="submit">Simulate</button>
+    </form>
+
+    <div id="results"></div>
+    <div id="dobbyResponse" class="chat-bubble"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
